@@ -1,0 +1,8 @@
+Test Case ID,Test Case Name,Description,Input,Expected Output,Notes
+TC01,test_size_small,Test that measurements below 38 are classified as 'S'.,37,'S',Checks that values less than 38 return 'S'.
+TC02,test_size_small_boundary,Test boundary value where size transitions from 'S' to 'M'.,38,'S',Tests classification of 38 as 'S' (boundary case).
+TC03,test_size_medium,Test that measurements between 39 and 41 are classified as 'M'.,39,'M',Checks that values between 39 and 41 return 'M'.
+TC04,test_size_medium,Test that measurements between 39 and 41 are classified as 'M'.,40,'M',Confirms that mid-range medium value returns 'M'.
+TC05,test_size_large,Test that measurements of 42 and above are classified as 'L'.,42,'L',Verifies 42 as the lower boundary for 'L'.
+TC06,test_size_large,Test that measurements of 42 and above are classified as 'L'.,43,'L',Tests that values above 42 return 'L'.
+TC07,test_negative_size,Test that negative values raise a ValueError.,-1,ValueError: Negative size is not possible,Confirms error handling for invalid negative input.
