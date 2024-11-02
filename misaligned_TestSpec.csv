@@ -1,0 +1,6 @@
+Test Case ID,Test Case Name,Description,Input,Expected Output,Notes
+TC01,Test Output Line Count,"Verify that print_color_map produces exactly 25 lines of output, one for each color combination.",None,25 lines are printed,"Confirms the correct total of printed entries."
+TC02,Test Format Alignment,"Check that each line has exactly three parts separated by '|' and that all values are properly formatted and aligned.",None,Each line formatted with aligned index, major color, and minor color,"Detects misalignment or formatting issues in output."
+TC03,Test Integer Index,"Ensure that the first part of each line is a valid integer index.",None,Each line starts with an integer index,"Validates correct numeric indexing in each line of the output."
+TC04,Test Major Color Alignment,"Check that major color names are left-aligned and have sufficient spacing.",None,Major color names are at least 4 characters wide,"Ensures readability and alignment in the major color column."
+TC05,Test Minor Color Alignment,"Check that minor color names are left-aligned and have sufficient spacing.",None,Minor color names are at least 4 characters wide,"Ensures readability and alignment in the minor color column."
